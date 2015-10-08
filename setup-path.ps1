@@ -16,6 +16,6 @@
 
 $userName=[Environment]::UserName
 $currentPath=[environment]::GetEnvironmentVariable("Path")
-$gradleDir=";C:\Users\" + $userName + "\gradle"
-$appEngineDir=";C:\Users\" + $userName + "\appengine"
+$gradleDir=";C:\Users\" + $userName + "\gradle\bin"
+$appEngineDir=";C:\Users\" + $userName + "\appengine\bin"
 [Environment]::SetEnvironmentVariable("Path", $currentPath + $gradleDir + $appEngineDir, "Machine")
